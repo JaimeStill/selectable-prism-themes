@@ -4,6 +4,8 @@ Try it out [live](https://jaimestill.github.io/selectable-prism-themes/).
 
 ![selectable-prism-themes](https://user-images.githubusercontent.com/14102723/99750999-61991d80-2aaf-11eb-95c6-8b61bfa9b0cd.gif)
 
+> In addition to the Angular setup, this project includes the following node modules: `prismjs`, `@types/prismjs`, and `prism-themes`.
+
 ## [snippet.scss](https://github.com/JaimeStill/selectable-prism-themes/blob/main/src/theme/snippet.scss)
 
 Themes are imported within class names indicative of the theme.
