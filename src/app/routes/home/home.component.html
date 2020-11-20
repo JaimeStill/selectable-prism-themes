@@ -1,0 +1,25 @@
+<section class="container">
+  <mat-form-field>
+    <mat-label>Prism Theme</mat-label>
+    <mat-select [(ngModel)]="themeSvc.snippetTheme"
+                [compareWith]="themeSvc.compareSnippetThemes">
+      <mat-option *ngFor="let t of themeSvc.snippetThemes"
+                  [value]="t">{{t.label}}</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <section fxLayout="row | wrap"
+           fxLayoutAlign="space-between start">
+    <section>
+      <h1>DocumentController.cs</h1>
+      <hosted-code lang="cs"
+                   [url]="url"
+                   [theme]="themeSvc.snippetTheme.css"></hosted-code>
+    </section>
+    <section>
+      <h1>routing-service.ts</h1>
+      <hosted-code lang="ts"
+                   url="https://raw.githubusercontent.com/JaimeStill/app-support/main/client/docs/src/app/services/routing.service.ts"
+                   theme="snippet-nord"></hosted-code>
+    </section>
+  </section>
+</section>

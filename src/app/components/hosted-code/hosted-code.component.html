@@ -1,0 +1,9 @@
+<ng-template #loading>
+  <mat-progress-bar mode="indeterminate"
+                    color="accent"></mat-progress-bar>
+</ng-template>
+<section *ngIf="snippetSvc.snippet$ | async as snippet else loading"
+         class="code-container"
+         [ngClass]="theme">
+  <pre [ngClass]="lang"><code [ngClass]="lang" [innerHtml]="snippet"></code></pre>
+</section>
