@@ -5,7 +5,7 @@ import { SnippetTheme } from '../models';
 @Injectable()
 export class ThemeService {
   isLight = false;
-  snippetTheme: SnippetTheme = { label: 'Default', css: 'snippet-default' }
+  snippetTheme: SnippetTheme = { label: 'Synthwave 84', css: 'snippet-synthwave84' }
 
   snippetThemes: SnippetTheme[] = [
     { label: 'Coy', css: 'snippet-coy' },
